@@ -1,0 +1,13 @@
+basic qustion regarding javascript
+
+qustion 1
+what is the diffrence bitween .txt files and .js files
+answer :-
+the diffrence bitween .js files and .txt files is that both are allmost same, 
+the reason is that we can treat both files as source files
+meanwhile both contains text but in .js file the text is not random text 
+they have their own sturcture,syntext and meaning 
+every programing langauage come with their own syantex .js , .py etc
+.js / .py extention can help to compile code with their own systex and meaning
+.txt dont have any compiler and we needcompiler to execute our code
+
