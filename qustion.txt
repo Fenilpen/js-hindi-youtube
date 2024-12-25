@@ -8,8 +8,14 @@ the reason is that we can treat both files as source files
 meanwhile both contains text but in .js file the text is not random text 
 they have their own sturcture,syntext and meaning 
 every programing langauage come with their own syantex .js , .py etc
+
 .js / .py extention can help to compile code with their own systex and meaning
 .txt dont have any compiler and we needcompiler to execute our code
+if we write var/let in txt its just a alphabetical word with no meaning
+but with extention .js/.py it has it own meaning its called the keyword
 
-new edit is here
-another new line is here
+Notes :-
+
+Chapter - 1
+prefer not to use var 
+beacause of the issue in block scope and functional scope
