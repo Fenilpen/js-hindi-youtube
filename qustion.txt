@@ -14,8 +14,23 @@ every programing langauage come with their own syantex .js , .py etc
 if we write var/let in txt its just a alphabetical word with no meaning
 but with extention .js/.py it has it own meaning its called the keyword
 
-Notes :-
+Notes from the series:-
 
-Chapter - 1
+No - 4 (Variables)
 prefer not to use var 
 beacause of the issue in block scope and functional scope
+
+
+No - 5 (dataTypes)
+
+number  => 234
+bigint => 2 power 4
+string =>  "in this"
+boolean => true , false
+null
+undefined
+symbol => something unique
+
+complex datatypes
+object
+function
