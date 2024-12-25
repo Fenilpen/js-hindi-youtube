@@ -21,7 +21,9 @@ prefer not to use var
 beacause of the issue in block scope and functional scope
 
 
-No - 5 (dataTypes)
+No - 5 (dataTypes,newjs)
+
+"use strict"  it will treat all javascript code as newer version
 
 number  => 234
 bigint => 2 power 4
