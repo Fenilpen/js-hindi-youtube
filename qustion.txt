@@ -23,7 +23,9 @@ beacause of the issue in block scope and functional scope
 
 No - 5 (dataTypes,newjs)
 
-"use strict"  it will treat all javascript code as newer version
+"use strict"  it will treat all javascript code as newer version    (newer version of javascript)
+
+datatypes in javascript:-
 
 number  => 234
 bigint => 2 power 4
