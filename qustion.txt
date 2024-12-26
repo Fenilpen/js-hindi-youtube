@@ -38,3 +38,11 @@ symbol => something unique
 complex datatypes
 object
 function
+
+No - 6 Datatype Conversion
+
+// "33" => 33    /string to number
+// "33fenil" => NaN    /string to number   (becuase its not pure number so its NaN (not a number))
+// true => 1; false => 0   /number to boolean and vice versa
+// "" => false   /string to boolean
+// "fvds" => true  /dtring to boolean
