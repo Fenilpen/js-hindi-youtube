@@ -22,10 +22,14 @@ beacause of the issue in block scope and functional scope
 
 
 No - 5 (dataTypes,newjs)
-
 "use strict"  it will treat all javascript code as newer version    (newer version of javascript)
 
+
 datatypes in javascript:-
+
+there are two types of datatypes
+
+1 Primitive dataTypes  and Non-Primitive datatypes :-
 
 number  => 234
 bigint => 2 power 4
@@ -35,9 +39,17 @@ null
 undefined
 symbol => something unique
 
-complex datatypes
+Non-Primitive datatypes (Reference)
+
+Array
 object
 function
+non-Primitive's Typeof is function , object
+
+note 
+1 if you want to master javascript master javascript objects and browser's web-events.
+2 Javascriptis dynamicaly typed langauage. it means type of variable is determined at runtime.
+
 
 No - 6 Datatype Conversion
 
@@ -45,4 +57,4 @@ No - 6 Datatype Conversion
 // "33fenil" => NaN    /string to number   (becuase its not pure number so its NaN (not a number))
 // true => 1; false => 0   /number to boolean and vice versa
 // "" => false   /string to boolean
-// "fvds" => true  /dtring to boolean
+// "fvds" => true  /string to boolean
