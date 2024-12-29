@@ -58,3 +58,9 @@ No - 6 Datatype Conversion
 // true => 1; false => 0   /number to boolean and vice versa
 // "" => false   /string to boolean
 // "fvds" => true  /string to boolean
+
+
+No-7 Strings method
+
+
+No-8
