@@ -1,4 +1,8 @@
-basic qustion regarding javascript
+basic qustions and notes regarding javascript
+
+() = parentheses
+{} = curly brackets
+[] = square brackets
 
 qustion 1
 what is the diffrence bitween .txt files and .js files
