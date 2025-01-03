@@ -1,4 +1,5 @@
 // let me teach mySelf array in arrey rey way (hehe:)
+// few methods few trics to convert to combine
 
 // array's type of is object but object is in key pair value and array is bit diffrent 
 // so array is type of abject but in length way like index 
@@ -47,7 +48,7 @@
 
 // Spice and Slice  ******************* 
 // splice will change value in refference 
-// slice will change value in copy array
+//slice will change value in copy array
 
 // let array5 = [1,2,3,4,5,6,7,8,9]
 // let array6 = array5.splice(0,3)
@@ -60,3 +61,56 @@
 // let array8 = array7.slice(0,3)
 // console.log(array7);
 // console.log(array8);
+
+
+// Part 1 basics of the Array is compelete lets move on the another part 2
+
+
+//So here is the qustion lets merge to array 
+
+// let array9 = [1,2,3,4,5]
+// let array10 = [6,7,8,9,10]
+
+// let array11 = array9.push(array10)
+// console.log(array9);     // ahhhho push, it didt worked 
+
+// let array11 = array9.concat(array10)
+// console.log(array11);    // yeah boy it worked
+
+// but hoe about mixing 3 or more arrays ????
+// here its comes spred operetor [...xyz]
+
+// let arraySpred = [...array9,...array10]
+// console.log(arraySpred);
+
+// spred operetor is more usable and easy to use 
+
+// lets check another problem
+// suppose you have array in array in array and you need to flat it 
+
+// let arrayinArray = [ 12,45,[23,45],34,[23,67,[3,45,8],44],78]
+// console.log(arrayinArray.flat(Infinity));  
+
+// you need to give depth or you can give infinity
+
+// lets talk about three basic array methods ***********************
+
+// how to check if the value is in array or not
+
+// console.log(Array.isArray("fenil"));  // false
+// ok then how to convert in to array
+// console.log(Array.from("fenil"));  // we did it
+
+// you have got three variables now combine all three in one array
+// let score = 100
+// let score2 = 200
+// let score3 = 300
+// console.log(Array.of(score,score2,score3));
+
+// lets use spred operetor
+// let score4 = [...score,...score2,...score3]
+// console.log(score4); 
+// heheheh dont try to be smart, we were combine number not array
+
+
+// ok thanks this is enough
