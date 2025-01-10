@@ -1,6 +1,5 @@
 // to create objects there is two types 
-// one is litral and another one is constructor
-// constructor == singleton
+// one is litral (non-singleton) and another one is constructor (singleton) 
 // Object.create
 
 // object literals
