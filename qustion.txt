@@ -67,4 +67,24 @@ No - 6 Datatype Conversion
 No-7 Strings method
 
 
-No-8
+No-8 object-destructuring
+
+here is the syntex of object de-structuring
+
+let obj = {
+    name: "fenil"
+    price: "000"
+    courceInstructure: "aryabhatt"
+}
+
+if i want to access value of courceInstructure i will use obj. path
+because you cant log courceInstructure directly.
+lets enhance this with something easy
+
+const {courceInstructure} = course // new method
+console.log(courceInstructure)
+
+// This line is saying, "Take the courceInstructure property from 
+// the course object and create a variable called courceInstructure with its value."
+// Essentially, it pulls out the value of the courceInstructure property from the course object 
+// and assigns it to a new constant called courceInstructure
