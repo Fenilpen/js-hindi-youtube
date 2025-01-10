@@ -15,7 +15,7 @@ const {courceInstructure} = course // new method
 // This line is saying, "Take the courceInstructure property from 
 // the course object and create a variable called courceInstructure with its value."
 // Essentially, it pulls out the value of the courceInstructure property from the course object 
-// and assigns it to a new constant called courceInstructure (Ai sumary)
+// and assigns it to a new constant called courceInstructure
 
 console.log(courceInstructure); // now i will simply put the varriable and log it
 
