@@ -60,3 +60,54 @@
    // In this case, it's logged to the console with console.log(product);, so you see 20 in the console.
    // So, the value is returned to the exact spot where you called the function. 
    // This makes functions really powerful because they can perform a task and give you the result wherever you need it.
+
+   
+// rest operetor... use rest operetor if you want to add more values in parameters
+
+function spred (...miyong) {
+    return miyong
+ }
+ 
+ let chinka = spred(200,300,400)
+ // console.log(chinka);
+ 
+ 
+ // how to access object in functions  example 1
+ 
+ // function accessobj (user){
+ //   console.log(user.name2)
+ // }
+ 
+ // accessobj({
+ //    name2: "fenilpatel",
+ //    volume: "2ton"
+ // })
+ 
+ // example 2
+ 
+ // let obj1 = {
+ //    name1: "0/X",
+ //    type: "Game",
+ //    price: 499
+ // }
+ 
+ // function Gamecart (dtail){
+ //    return dtail.type
+ // }
+ 
+ // let total = Gamecart(obj1)
+ // console.log(total);
+ 
+ 
+ // how to access array in function
+ 
+ // let newArray = [12,23,344,66]
+ 
+ // function getarray(getting) {
+ //    return getting[2]
+ // }
+ 
+ // let result = getarray(newArray)
+ 
+ // console.log(result);
+ 
