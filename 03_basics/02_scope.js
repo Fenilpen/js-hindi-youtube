@@ -59,3 +59,30 @@ console.log("outer",c);
 
 // special note
 // scope in node and console will be diffrent
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// lets take a small look on hoisting
+// what happen when you call something before you decleare
+
+// console.log(fenil);  // undefined
+// console.log(feni);  // reference error
+// console.log(nil); // reference error 
+
+// var fenil = 2345
+// let feni = 6787989
+// const nil = 9876
+
+
+// console.log(myname("f"))  //get the output f1
+
+// function myname (nam){
+//    return nam + 1
+// }
+
+
+// name1("h") // refrence error
+
+// let name1 = function(naam){
+//    return naam + 1
+// }
