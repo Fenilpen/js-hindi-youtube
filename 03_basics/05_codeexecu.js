@@ -95,3 +95,5 @@
 
 //   Lifo concept
 // last in first out
+
+// try how call stack works in browser go-to inspect => sources => new snippet
