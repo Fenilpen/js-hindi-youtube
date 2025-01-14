@@ -74,9 +74,17 @@
 
 // call stack
 
-// The call stack in JavaScript is a mechanism that keeps track of function calls. 
-// It operates on a "last in, first out" (LIFO) principle, 
+// what is call stack in javascript ???
+
+// The call stack in JavaScript is a mechanism for keeping track of function calls. 
+// It's a stack data structure that operates in a Last In, First Out (LIFO) manner.
 // meaning the last function that gets pushed onto the stack is the first to be popped off when it completes execution
+
+// Here's a quick rundown on how it works:
+// When you call a function, it gets pushed onto the top of the call stack.
+// When the function finishes executing, it's popped off the stack.
+// This process continues until the stack is empty.
+
 
 //   ________
 //   | fun3 |
