@@ -1,6 +1,19 @@
 // javascript execution context
-// your code will go in this variable in global execution 
-// the global execution context will be diffent in browser and your runtime environment
+// in first step your code will go for in global execution
+
+// now what is global and this meant??
+
+// in JavaScript, the global execution context is the default environment where code is executed. 
+// It’s the context that is created when your JavaScript file starts running, 
+// and it sets the stage for all the code that follows.
+
+// Global Object: In a web browser, this is the window object. 
+// It provides access to built-in functions, objects, and variables.
+
+// this Keyword: In the global context, 
+// this refers to the global object (window in browsers)
+
+// the global execution context could be diffent in browser and your runtime environment
 
 // we have three execution context
 // global execution 
