@@ -72,8 +72,12 @@
 // [delete executional context]
 
 
+// call stack
 
-//  call stack
+// The call stack in JavaScript is a mechanism that keeps track of function calls. 
+// It operates on a "last in, first out" (LIFO) principle, 
+// meaning the last function that gets pushed onto the stack is the first to be popped off when it completes execution
+
 //   ________
 //   | fun3 |
 //   | fun2 |
