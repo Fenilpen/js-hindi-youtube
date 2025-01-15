@@ -34,7 +34,7 @@
 // // these things will run in two phases
 // in global execution =>
 // 1 Memory creation phase (memory allocation for variables) =>
-// 2 execution phase (values get defines)
+// 2 execution phase (variables get values and prosesed)
 
 // lets learn with example
 // here is the sample code
@@ -66,7 +66,6 @@
 // 3 execution phase
 // val1 = 10
 // val2 = 5
-//
 // addNum [it will create new executional context] //for every function it will create new exec context
 // [new variable environment + executional thread]  // functional execution context
 // memoryphase and execution phase
@@ -80,7 +79,7 @@
 // total = 15
 // return total
 // 
-// [delete executional context]
+// [delete executional context] (automatic prosses)
 
 
 // call stack
@@ -108,4 +107,3 @@
 // last in first out
 
 // try how call stack works in browser go-to inspect => sources => new snippet
-
