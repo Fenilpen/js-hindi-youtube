@@ -20,7 +20,18 @@
 // functional executional context
 // eval execution context
 
-// these things will run in two phases
+// Functional Execution Context
+// you can think of the functional execution context as a new variable environment
+// though this is a simplified way to describe this
+// Definition: This context is created whenever a function is called. 
+// Each function call creates a new functional execution context.
+
+// Characteristics:
+// It handles the execution of that specific function.
+// The functional execution context contains its own this value, variables, and object properties.
+// It is pushed to the top of the execution stack, and once the function is done executing, it is popped off the stack.
+
+// // these things will run in two phases
 // in global execution =>
 // 1 Memory creation phase (memory allocation for variables) =>
 // 2 execution phase (values get defines)
@@ -57,7 +68,7 @@
 // val2 = 5
 //
 // addNum [it will create new executional context] //for every function it will create new exec context
-// [new variable environment + executional thread]
+// [new variable environment + executional thread]  // functional execution context
 // memoryphase and execution phase
 // val1 = undefined
 // val2 = undefined
@@ -97,3 +108,4 @@
 // last in first out
 
 // try how call stack works in browser go-to inspect => sources => new snippet
+
