@@ -49,7 +49,7 @@
 
 //JavaScript Iterables and Non-Iterables
 
-// Iterables
+// Iterables (for of)
 // Arrays
 // Strings
 // Maps
@@ -59,7 +59,7 @@
 // NodeLists
 // Generators
 
-// Non-Iterables
+// Non-Iterables (for in)
 // Objects (without implementing Symbol.iterator)
 // Numbers
 // Booleans
