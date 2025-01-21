@@ -32,7 +32,36 @@
 //     console.log(value);
 // }
 
+// its confusing
+
+// for...of is perfect for looping over the values of arrays, strings, maps, and sets. 
+// It’s most effective when you care about the values.
+
+// for...in is ideal for objects when you need to loop through the keys. 
+// It's effective for tasks like copying or modifying properties.
+
+// choose for...of for iterating over values in arrays and other iterable objects. 
+// Opt for for...in when you need to deal with the properties of an object.
 
 // for objects for in loop
 // for arrays for of loop
 // for map for of loop
+
+//JavaScript Iterables and Non-Iterables
+
+// Iterables
+// Arrays
+// Strings
+// Maps
+// Sets
+// Typed Arrays
+// Arguments Object
+// NodeLists
+// Generators
+
+// Non-Iterables
+// Objects (without implementing Symbol.iterator)
+// Numbers
+// Booleans
+// Undefined
+// Null
