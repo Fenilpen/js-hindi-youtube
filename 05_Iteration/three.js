@@ -35,7 +35,7 @@
 
 // console.log(typeof map == obj);
 
-// now iterate the map
+// now the map
 
 // let map = new Map()
 // map.set("IN","India")
@@ -60,7 +60,7 @@
     
 // }
 
-// now try iterate in object 
+// now try in object 
 
 // let obj1 = {
 //     game1: "cricket",
