@@ -7,7 +7,7 @@
 
 // Map Nesting using map filter together
 
-const ourNumbers = [1,2,3,4,5,6,7,8,9,10]
+// const ourNumbers = [1,2,3,4,5,6,7,8,9,10]
 
 // const numss = ourNumbers.map( (val) => val * 10 )
 //                         .map( (num) => num + 1  )
