@@ -6,6 +6,39 @@
 // console.log(sum);
 
 
+// taking example from shoping cart
+// acc value 0 is must 
+
+// By using 0 as the initial value, you ensure that the accumulator (acc) is always a number. 
+// If you don't provide an initial value, the first object in the array becomes the initial accumulator, 
+// which can lead to type inconsistencies and errors when you try to perform arithmetic operations on objects.
+
+
+// let cart = [
+//     {
+//         items: "onion",
+//         price: 35
+//     },
+//     {
+//         items: "apple",
+//         price: 60
+//     },
+//     {
+//         item: "banana",
+//         price: 50
+//     }
+// ]
+
+
+// const total = cart.reduce( (acc,item) => { 
+//     console.log(`acc:${acc} item: ${item.price}`);
+
+//     return acc + item.price 
+// },0)
+
+// console.log(total);
+
+
 // At the end lets compere three methods foreach, filter, reduce
 
 
