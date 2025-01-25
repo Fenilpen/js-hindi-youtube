@@ -90,9 +90,11 @@ console.log(courceInstructure)
 // and assigns it to a new constant called courceInstructure
 
 
-special note on DOM :-
+no_09
 
-// here is the quick note regarding my confution on string 
+special note on DOM and String :-
+
+// here is the quick note regarding my old confution on string 
 // when we write 'click' it just meant c+l+i+c+k alphabets
 // but if we use 'click' in events it means the meaning of click
 // and both are strings so while learning this qustion often comes
