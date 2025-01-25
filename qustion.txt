@@ -88,3 +88,39 @@ console.log(courceInstructure)
 // the course object and create a variable called courceInstructure with its value."
 // Essentially, it pulls out the value of the courceInstructure property from the course object 
 // and assigns it to a new constant called courceInstructure
+
+
+special note on DOM :-
+
+// here is the quick note regarding my confution on string 
+// when we write 'click' it just meant c+l+i+c+k alphabets
+// but if we use 'click' in events it means the meaning of click
+// and both are strings so while learning this qustion often comes
+
+// In JavaScript, strings like 'click' that you pass into functions like addEventListener are predefined strings 
+// that the JavaScript engine recognizes as specific event types. Here's a clearer breakdown:
+
+// General Strings :-
+// General strings are just sequences of characters you define for various purposes, 
+// such as storing text, combining values, etc.
+
+// Event Strings :-
+// Event strings like 'click', 'mouseover', 'keydown', etc., are predefined in the browser's event handling system. 
+// They are recognized by the JavaScript engine as specific types of events.
+
+// When you use 'click' in addEventListener, it isn't just any arbitrary string. Instead, 
+// it's a keyword that the browser's event system understands to mean "listen for a click event."
+
+// In this war inside string , 'click' is a predefined string that tells the browser to look for 
+// and handle click events on the specified element. 
+// These predefined strings are part of the event types that are built into the browser's DOM API
+
+
+// How the Browser Interprets Event Strings
+// The browser has a list of recognized event types. When you pass 'click' to addEventListener, 
+// the browser checks this list, understands that you're referring to a click event, 
+// and sets up the necessary logic to detect and handle this event.
+
+// In summary, while both are technically strings, general strings are just sequences of characters, 
+// while event strings like 'click' have special meaning within the context of the DOM and are recognized by the browser's event system.
+
