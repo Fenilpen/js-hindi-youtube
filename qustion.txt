@@ -126,3 +126,21 @@ special note on DOM and String :-
 // In summary, while both are technically strings, general strings are just sequences of characters, 
 // while event strings like 'click' have special meaning within the context of the DOM and are recognized by the browser's event system.
 
+
+// few dom examples
+
+DOM Manipulation Tactics
+Here are a few common tactics for manipulating the DOM:
+Accessing Elements: Use methods like getElementById(), querySelector(), and querySelectorAll() to access elements in the DOM.
+
+Modifying Content: Change the content of elements using properties like textContent and innerHTML.
+
+Creating and Adding Elements: Use methods like createElement() and appendChild() to create new elements and add them to the DOM.
+
+Removing Elements: Use methods like removeChild() to remove elements from the DOM.
+
+Changing Styles: Modify the styles of elements using the style property.
+
+Event Handling: Add event listeners to elements to handle user interactions using addEventListener().
+
+Batch Updates: Use DocumentFragment to batch multiple DOM updates and minimize reflows and repaints.
