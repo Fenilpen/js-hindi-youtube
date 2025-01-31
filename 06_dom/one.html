@@ -73,3 +73,51 @@ nextSibling: Accesses the next sibling node.
 
 
 -->
+
+
+<!-- documenting DOM for structure learning -->
+
+<!-- 
+
+start with selectors in DOM
+
+to select by id
+document.GetElementById('')
+
+to select by classname
+document.getElementsByClassName('')
+
+to knows the id
+document.GetElementById('').id
+
+to knows the classname
+document.GetElementById('').className
+
+to get attribute
+document.GetElementById('').getAttribute('??')    ??=>put the name of attribute
+
+to set attribute
+document.GetElementById('').setAttribute('name','value')  if the value allready exist it will overwrite it
+
+store selctor in variable
+const title = document.GetElementById('')
+
+using style element
+
+title.style.backgroundColor = 'red'      // for color change
+title.style.padding = "15px"            // for changing padding
+title.style.borderRadius = "5px"       // for changing border redius
+
+threes are for diffrent use cases
+title.innerText        // Returns/render plain text as it's displayed on the page.
+title.textContent     // Returns/render all text content, regardless of formatting.
+title.innerHTML      // This property returns the HTML content of an element, including any nested HTML tags.
+
+selecting using querySelector
+document.querySelector('#title')                //for id
+document.querySelector('.heading')             //for class
+document.querySelector('input[type="password"]  // for input
+
+
+
+-->
