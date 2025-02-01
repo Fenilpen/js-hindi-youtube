@@ -9,17 +9,49 @@
     
 </body>
 <script>
-    // const div = document.createElement('div')
-    // console.log(div);
-    // div.className = 'main'
-    // div.id = Math.round(Math.random() * 10 + 1)
-    // div.setAttribute('title','generated title')
-    // div.style.backgroundColor = 'green'
-    // div.style.padding = '12px'
-    // div.innerText = 'fenil patel'
-    // const addtext = document.createTextNode(' fenil patel')
-    // div.appendChild(addtext)
-
-    // document.body.appendChild(div)
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'main'
+    div.id = Math.floor(Math.random() * 10 + 1)
+    div.setAttribute("title","generated title")   
+    div.style.backgroundColor = "red"
+    div.style.padding = "10px"
+    // div.innerText = "fenil with patel"
+    const addtext = document.createTextNode("fenil patel")
+    div.appendChild(addtext)
+    document.body.appendChild(div)
 </script>
 </html>
+
+<!-- 
+brif documentation :-
+
+to create element
+const div = document.createElement('div')
+
+to give classname
+div.className = 'main'
+
+to give id
+div.id = 'myid'
+
+to set attribute (syntex = key value)
+div.setAttribute("title","generated title")
+
+to give background color
+div.style.backgroundColor = "red"
+
+to give padding
+div.style.padding = "10px"
+
+to give text using innertext
+div.innerText = "fenil with patel"
+
+to give innertext using createTextNode
+const addtext = document.createTextNode("fenil patel")
+div.appendChild(addtext)
+
+final step attach div in document
+document.body.appendChild(div)
+
+-->
