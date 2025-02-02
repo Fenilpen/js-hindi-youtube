@@ -45,5 +45,20 @@
     //remove
     const lastlang = document.querySelector('li:last-child')
     lastlang.remove()
+
+// few notes regarding confution in DOM
+
+// why this wont work as expexted
+// document.createElement('li').innerHTML = newlang         XXX
+
+// The issue lies in the line. It creates an <li> element but does not store it in a variable. 
+// Thus, when you try to append it, there is no reference to the newly created element.
+// To fix this store the new <li> element in a variable
+
+// then how about this ????????
+// const li = document.createElement('li').innerHTML = newlang   // the = will bw the problem
+// This line will set the li constant to the value of newlang, not to the newly created <li> element. 
+// Essentially, li will just be a string containing the value of newlang rather than the actual element.
+  
 </script>
 </html>
