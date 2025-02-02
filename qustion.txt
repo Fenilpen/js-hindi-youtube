@@ -18,6 +18,22 @@ every programing langauage come with their own syantex .js , .py etc
 if we write var/let in txt its just a alphabetical word with no meaning
 but with extention .js/.py it has it own meaning its called the keyword
 
+qustion 2 
+what is the diffrence bitween () and =
+
+Style Property Assignment (using =):
+
+parent.children[2].style.color = "orange": Here, you're assigning the color "orange" to the color property of the style object for a specific child element. The = sign is used to set the value of this property directly.
+
+Query Selector Method (using () ):
+
+const dayone = document.querySelector(".day"): This line is using the querySelector method to select the first element in the document that matches the specified CSS selector (in this case, an element with the class "day"). The parentheses () are used to pass the argument (the selector) to the method.
+
+In essence:
+= is used for assigning values.
+() is used to invoke methods or functions.
+
+
 Notes from the series:-
 
 No - 4 (Variables)
