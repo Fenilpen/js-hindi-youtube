@@ -24,7 +24,7 @@ if(playGame){
 }
 
 function validateGuess (guess){
-  if(isNaN(guess)){
+  if(Number.isNaN(guess){
     alert('please enter a valid number')
   } else if (guess < 1){
     alert('please enter a number more than 1')
