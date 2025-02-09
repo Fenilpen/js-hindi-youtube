@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+
+            <li> <img width="200px" id="crow" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Corvus_moneduloides_212163787_%28cropped%29.jpg" 
+            alt="crow"> </li>
+
+            <li> <img width="200px" id="sperow" src="https://www.allaboutbirds.org/guide/assets/photo/305880301-480px.jpg" alt="sperow"> </li>
+
+            <li><img width="200px" id="pecock" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhFOp7t2d00W8mbCF1p2q32VJSYoiV97xZg&s" alt="pecock"></li>
+
+            <li><img width="200px" id="parrot" src="https://cdn.britannica.com/87/196687-138-2D734164/facts-parrots.jpg?w=800&h=450&c=crop" alt="parrot"></li>
+
+            <li><img width="200px" id="piegon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEGa5l9nogPn8jzi7dxfbWWswhWPriiXoebQ&s" alt="piegon"></li>
+
+            <li><a style="color: aliceblue;" href="www.google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // this is old method
+    // document.getElementById('parrot').onclick = function () {
+    //     alert('parrot clicked')
+    // }
+    
+    // newer way
+    // document.getElementById('parrot').addEventListener('click', function (e) {
+    //     alert('clicked')
+    // },false)
+
+    // attachEvent()
+    // jQuery - onEventListener
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+    
+
+// Event Propagation in JavaScript
+// When an event happens in the web page, such as a user clicking a button, 
+// that event doesn't just affect that button. Instead, 
+// it can trigger other events in the elements surrounding or containing that button. 
+// This concept is known as "event propagation." There are three phases:
+
+
+// Capturing Phase: The event starts from the outermost element and works 
+// its way down to the target element where the event occurred.
+
+// Target Phase: The event reaches the target element where the action took place.
+
+// Bubbling Phase: The event then bubbles up from the target element back to the outermost elements.
+
+// Imagine you have a series of nested boxes. If you click the innermost box, 
+// the event will "capture" from the outer box, then reach the target box, 
+// and finally "bubble" back up through the outer boxes.
+
+// true means top to bottom
+// false means bottom to top
+
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log('clicked inside of the ul');
+    // },true)
+
+    // document.getElementById('crow').addEventListener('click', function (e) {
+    //     console.log('crow clicked');
+    // },true)
+
+    // output
+    // clicked inside of the ul
+    // crow clicked
+
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log('clicked inside of the ul');
+    // },false)
+
+    // document.getElementById('crow').addEventListener('click', function (e) {
+    //     console.log('crow clicked');
+    //      e.stopPropagation()   use this to stop bubuling 
+    // },false)
+
+    // output
+    // crow clicked
+    // clicked inside of the ul
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log("google clicked");
+    //    e.preventDefault()   to prevent google from opening
+    //    e.stopPropagation()  stop bubeling
+    // },false)
+
+    // remove perticular element
+
+    // document.querySelector('#images').addEventListener('click',function(e){
+    //     console.log(e.target.tagName);
+    //     if(e.target.tagName === 'IMG'){
+    //       let removeit = e.target.parentNode
+    //       removeit.remove()
+    //     }
+       
+    // }, false)
+    
+    // removeit.parentNode.removeChild(removeit)
+</script>
+</html>
