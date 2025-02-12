@@ -29,14 +29,19 @@
 let setted;
 
 function started (){
+     
+    if(!setted){  // it will check if the setted is allready running or not  must
+        setted = setInterval(changed,1000)
+    }
+    
     function changed () {
         document.body.style.backgroundColor = changingcolor()
     }
-    setted = setInterval(changed,500)
 }
 
 function stopped () {
     clearInterval(setted)
+    setted = null;  // to fulsh out the value 
 }
 
 start.addEventListener('click',started)
