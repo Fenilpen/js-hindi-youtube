@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    
+</body>
+<script>
+    const URL = 'https://api.github.com/users/hiteshchoudhary'
+    const source = new XMLHttpRequest()
+    source.open('GET','https://api.github.com/users/hiteshchoudhary')
+    source.send()
+    console.log(source);
+    
+    source.onreadystatechange = function(){
+        if(source.readyState === 4){
+            let data = JSON.parse(this.responseText)
+            console.log(data);
+        }
+    }    
+</script>
+</html>
