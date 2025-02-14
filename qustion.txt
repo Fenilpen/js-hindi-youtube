@@ -4,6 +4,102 @@ basic qustions and notes regarding javascript
 {} = curly brackets
 [] = square brackets
 
+
+how javascript runs behind :-
+
+JavaScript works behind the scenes through several key components, including the JavaScript engine, 
+memory management, and the event loop. Let’s break it down step by step.
+
+1. JavaScript Engine (V8, SpiderMonkey, etc.)
+Every browser has a JavaScript engine that converts JavaScript code into machine code. Some popular engines are:
+
+Google Chrome & Node.js → V8
+Firefox → SpiderMonkey
+Safari → JavaScriptCore
+The engine has two main parts:
+
+Memory Heap – Stores variables and objects.
+Call Stack – Keeps track of function calls.
+
+When you run JavaScript, the engine first parses your code, then compiles it using Just-In-Time (JIT) compilation, 
+and finally executes it.
+
+2. Execution Context and Call Stack
+JavaScript runs inside an execution context, which consists of:
+
+Global Execution Context (GEC) – Created when the script starts.
+Function Execution Contexts – Created when a function is called.
+The Call Stack is a data structure where function calls are pushed and popped.
+
+Example:
+javascript
+
+function a() {
+    console.log("Hello from A");
+}
+
+function b() {
+    a();
+    console.log("Hello from B");
+}
+
+b();
+
+How it runs in the call stack:
+b() is called → Added to the stack.
+b() calls a() → a() is added to the stack.
+a() finishes → Removed from the stack.
+b() finishes → Removed from the stack.
+
+3. Memory Management (Heap & Stack)
+Primitive types (numbers, strings, booleans) are stored in the stack.
+Reference types (objects, arrays) are stored in the heap.
+
+Example:
+
+let x = 10; // Stored in the stack
+let obj = { name: "Alice" }; // Stored in the heap
+
+Garbage Collection (GC) in JavaScript automatically removes unused objects from memory.
+
+4. Asynchronous JavaScript & Event Loop
+JavaScript is single-threaded, meaning it executes one task at a time. But it handles async operations using:
+
+Web APIs (like setTimeout, fetch, DOM events)
+Callback Queue & Microtask Queue
+Event Loop (which manages async execution)
+Example:
+
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Timeout callback");
+}, 0);
+
+console.log("End");
+
+Execution Flow:
+"Start" is logged.
+setTimeout is sent to Web API.
+"End" is logged.
+The event loop waits for the timer, then moves the callback to the queue.
+"Timeout callback" is logged.
+
+5. JavaScript Compilation Model (JIT Compilation)
+Unlike C++ or Java, JavaScript is not purely interpreted but uses JIT (Just-In-Time) compilation:
+
+Parsing → Code is read and converted into an Abstract Syntax Tree (AST).
+Compilation → Bytecode is created by an interpreter.
+Execution & Optimization → The engine optimizes frequently used code.
+
+TL;DR: How JavaScript Works Behind the Scenes
+JS Engine (V8, SpiderMonkey) parses and executes the code.
+Call Stack manages function execution.
+Memory Heap stores objects, while primitives use the stack.
+Event Loop handles async tasks from the Web API.
+JIT Compilation makes JavaScript faster.
+
+
 qustion 1
 what is the diffrence bitween .txt files and .js files
 answer :-
@@ -22,17 +118,14 @@ qustion 2
 what is the diffrence bitween () and =
 
 Style Property Assignment (using =):
-
 parent.children[2].style.color = "orange": Here, you're assigning the color "orange" to the color property of the style object for a specific child element. The = sign is used to set the value of this property directly.
 
 Query Selector Method (using () ):
-
 const dayone = document.querySelector(".day"): This line is using the querySelector method to select the first element in the document that matches the specified CSS selector (in this case, an element with the class "day"). The parentheses () are used to pass the argument (the selector) to the method.
 
 In essence:
 = is used for assigning values.
 () is used to invoke methods or functions.
-
 
 Notes from the series:-
 
