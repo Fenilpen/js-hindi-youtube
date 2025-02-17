@@ -38,6 +38,10 @@ let england = new proto("england",312)
 console.log(india.incresed())
 console.log(england.incresed())
 
+// Why is new Important in OOP?
+// It allows object instantiation (creating multiple instances from a blueprint).
+// It enables prototypal inheritance by linking the object's prototype.
+// It makes code more organized and reusable.
 
 /*
 
