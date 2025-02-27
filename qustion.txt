@@ -253,3 +253,54 @@ Changing Styles: Modify the styles of elements using the style property.
 Event Handling: Add event listeners to elements to handle user interactions using addEventListener().
 
 Batch Updates: Use DocumentFragment to batch multiple DOM updates and minimize reflows and repaints.
+
+
+
+// qustion get random number accoding to length
+// with two logic using while and for loop
+
+// first answer using while loop
+
+// let password = ""
+
+// function random(size){
+// while (password.length < size ) {
+//        let number = Math.round(Math.random()*10)
+//        password += number
+//    }
+// }
+// random(12)
+// console.log(password);
+
+
+// second answer using for loop
+
+// let password2 = ''
+
+// function random2(size){
+//     for(let i = 0; i < size; i ++){
+//      let number = Math.floor(Math.random()*10)
+//      password2 += number
+     
+//     }
+// }
+// random2(12)
+// console.log(password2);
+
+
+// answer third using random via maths to index from string length using while loop
+
+// let source = "abcdefghijklmnopqrstuvwxyz"
+// let numbers = 123456789
+// let password = ''
+
+// function prosses (){           
+//         while(password.length <= 9){
+//         let random = Math.floor(Math.random() * 10)
+//         password += source.charAt(random)
+//         password += numbers.toString().charAt(random)  
+//         }
+//     }
+
+// prosses()
+// console.log(password);
