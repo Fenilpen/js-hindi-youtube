@@ -16,6 +16,53 @@ Write a function isItTruthy that takes an input and returns "It's truthy!" if th
 
 Answers
 
+function stringToNumber(input) {
+    let num = Number(input)
+    if (isNaN(num)){
+        let conv = "Not a number"
+        return conv
+    } else {
+        return num 
+    }``
+}
+
+function flipBoolean(input) {
+    let conv = Boolean(input)
+    return !conv
+}
+
+function whatAmI(input) {
+    const converted = Number(input); 
+
+    if (!isNaN(converted)) {
+        return "I'm a number!";
+    } else if (typeof input === 'string') {
+        return "I'm a string!";
+    } else {
+        return "I'm something else!";
+    }
+
+
+}
+
+function isItTruthy(input) {
+
+    if (input){
+        return   "It's truthy!"
+    }
+    else {
+        return "It's falsey!"
+    }
+}
+
+whatAmI("fenil")
+stringToNumber("11")
+flipBoolean(0)
+isItTruthy("fenil")
+
+
+// input === null || typeof input === false || typeof input === undefined || typeof input === 0 || typeof input === ""
+
 
 
 
