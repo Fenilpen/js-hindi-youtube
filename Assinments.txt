@@ -16,6 +16,7 @@ Write a function isItTruthy that takes an input and returns "It's truthy!" if th
 
 Answers
 
+1/
 function stringToNumber(input) {
     let num = Number(input)
     if (isNaN(num)){
@@ -26,11 +27,13 @@ function stringToNumber(input) {
     }``
 }
 
+2/
 function flipBoolean(input) {
     let conv = Boolean(input)
     return !conv
 }
 
+3/
 function whatAmI(input) {
     const converted = Number(input); 
 
@@ -45,6 +48,7 @@ function whatAmI(input) {
 
 }
 
+4/
 function isItTruthy(input) {
 
     if (input){
@@ -59,12 +63,6 @@ whatAmI("fenil")
 stringToNumber("11")
 flipBoolean(0)
 isItTruthy("fenil")
-
-
-// input === null || typeof input === false || typeof input === undefined || typeof input === 0 || typeof input === ""
-
-
-
 
 
 {2}
